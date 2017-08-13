@@ -8,9 +8,9 @@
     <meta name="_token" content="{{csrf_token()}}">
     <meta name="keywords" content="webm, webm site, w0bm, videos, funny, internet">
     <meta name="Description" content="@if(!empty($video->interpret)){{$video->interpret}} – {{$video->songtitle}}@else()No Data Available ;__;@endif">
-    <meta property="og:image" content="@if(isset($video))https://w0bm.com/thumbs/{{str_replace(".webm","",$video->file)}}.gif"@endif/>
+    <meta property="og:image" content="@if(isset($video))https://w0bm.moe/thumbs/{{str_replace(".webm","",$video->file)}}.gif"@endif/>
     <link rel="icon" href="/favicon.png">
-    <title>@if(isset($video)){{ $video->id }} –@endif w0bm.com</title>
+    <title>@if(isset($video)){{ $video->id }} –@endif w0bm.moe</title>
     <link rel="favicon" href="favicon.ico" type="image/ico">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">

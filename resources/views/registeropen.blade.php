@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <div class="page-header">
-	<h5>Register your w0bm.com Account</h5>
+	<h5>Register your w0bm.moe Account</h5>
 <p style="color:red;">Note: We do not reset passwords, make sure to write down your password on paper, otherwise you need create a new account or start to circlejerk in the IRC!</p>
     </div>
     <div class="register">

@@ -52,7 +52,7 @@
         wohin= new Array(mup,mupr,mright,mdownr,mdown,mdownl,mleft,mupl);
         // ram = document.getElementById('mCSB_2');
         zeitstart=0; bleibneweile=0;
-        for(var i=1 ; i<meows; i++){    document.write("<SPAN id='a"+i+"' class='a"+i+"' onmouseover='fillmeowzbuffer(Math.round(Math.random()*13))' onmouseover='holdiemaus()'><img id='"+i+"' src='https://w0bm.com/wusel/meow_png/_"+i+".png' /></SPAN>");     } // onmouseover='mouseoversounds.playclip()'
+        for(var i=1 ; i<meows; i++){    document.write("<SPAN id='a"+i+"' class='a"+i+"' onmouseover='fillmeowzbuffer(Math.round(Math.random()*13))' onmouseover='holdiemaus()'><img id='"+i+"' src='https://w0bm.moe/wusel/meow_png/_"+i+".png' /></SPAN>");     } // onmouseover='mouseoversounds.playclip()'
         kommeaufy=document.getElementById('commentForm').offsetHeight;// + document.getElementById('commentForm').innerHeight  ;
         mittex=document.getElementById('mCSB_2').offsetLeft- document.getElementById('mCSB_2').scrollLeft+350;
         x=0; y=kommeaufy;  xalt=0; yalt=kommeaufy;  xcatz=200; ycatz=kommeaufy; malkrier=0;
@@ -74,7 +74,7 @@
         katzensagen15 = "You  terrify me hihihihihi    ";
         katzensagen16 = "Wh00Oops! this is  s c a r r y  ";
         katzensagen17 = "Need to catch mouse again its gone :> ";
-        document.write("<SPAN id='blubb' class='blubb'> <img id='blubber' src='https://w0bm.com/wusel/meow_png/_bubble.png' /></SPAN>");
+        document.write("<SPAN id='blubb' class='blubb'> <img id='blubber' src='https://w0bm.moe/wusel/meow_png/_bubble.png' /></SPAN>");
         document.write("<SPAN id='meowz' class='meowz' ><FONT><P><FONT SIZE=6 STYLE='font-size: 20pt;' >!MEOW!<p>thinking...</p></FONT>  </SPAN>");
         meme=0; countyy=0; meowcach= new Array(); meme=0; zeit5=0; zeit6=0; showeran=Math.random()*500+100; showeraus=0; textposx=100;textposy=100;
         cuteszeugs=8;fillmeowzbuffer(cuteszeugs);
