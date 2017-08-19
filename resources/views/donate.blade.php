@@ -22,11 +22,10 @@ use \App\Models\Donation;
 		</div>
 	</div>
 	<p>Currently we accept PayPal and Bitcoin</p>
-	<i class="fa fa-btc" style="color: #1FB2B0;" aria-hidden="true"></i> <span style="font-family:monospace;color:#1FB2B0;">1PXqtRtZLYwRFKKks7tipVXeauGSpy3u4z</span> <span><b>[ PREFERRED ]</b></span>
+	<i class="fa fa-btc" style="color: #1FB2B0;" aria-hidden="true"></i> <span style="font-family:monospace;color:#1FB2B0;">19RsmQBpEYxqoTetUup41rBo9CmWd7rfZW</span> <span><b>[ PREFERRED ]</b></span>
 	<br />
-	<i class="fa fa-paypal" style="color: #1FB2B0;"></i> <span style="font-family:monospace;coloR:#1FB2B0;">paypal@w0bm.moe</span>
+	<i class="fa fa-paypal" style="color: #1FB2B0;"></i> <span style="font-family:monospace;coloR:#1FB2B0;">w0bm@420blaze.it</span>
 	<br />
-	<p>We also opened up a Patreon account if you want to support w0bm every month <a href="https://www.patreon.com/w0bm">click here.</a></p>
 	<p>There is a small reward for donations, it's not much but all we can give back to you as a thanks.</p>
 	<p>Donors will receive a icon of choice with every donation over 5€ behind their name.</p>
   </div>
