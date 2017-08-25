@@ -25,7 +25,7 @@ class VideoController extends Controller
         if($request->has('q')){
             $needle = trim($request->input('q'));
             return view('index', [
-                'videos' => Video::withAnyTagsFuzzy($needle)
+                'videos' => Video::filtered()->withAnyTagsFuzzy($needle)
                     ->orderBy('id', 'asc')
                     ->paginate(20)->appends(['q' => $needle]),
                 'categories' => Category::all(),
@@ -33,7 +33,7 @@ class VideoController extends Controller
             ]);
         }
         return view('index', [
-            'videos' => Video::orderBy('id', 'ASC')->paginate(20),
+            'videos' => Video::filtered()->orderBy('id', 'ASC')->paginate(20),
             'categories' => Category::all()
         ]);
     }
@@ -132,7 +132,7 @@ class VideoController extends Controller
      * @return Response
      */
     public function show($id) {
-
+        // TODO: filter on direct id link??
         $video = Video::with('tags')->find($id);
         if(is_null($video))
             return redirect()

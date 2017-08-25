@@ -106,15 +106,17 @@ if(videoElem !== null) {
     var player = videojs(videoElem, {
         controls: true,
         playbackRates: [0.25, 0.5, 1, 1.5, 2],
-        inactivityTimeout: 0,
+        inactivityTimeout: 850,
         controlBar: {
             children: {
+		'progressControl': {},
                 'playToggle': {},
-                'progressControl': {},
+		'MuteToggle': {},
+		'volumeControl': {},
                 'currentTimeDisplay': {},
                 'timeDivider': {},
                 'durationDisplay': {},
-                'volumeControl': {},
+		'CustomControlSpacer': {},
                 'playbackRateMenuButton': {},
                 'fullscreenToggle': {}
             }
@@ -129,6 +131,8 @@ if(videoElem !== null) {
             });
         }
     });
+
+//player.on('mouseout', function(){ this.userActive(false) });
 
     //videojs fix for firefox
     if(navigator.userAgent.toLowerCase().indexOf('firefox') != -1 && player.autoplay() && !player.paused() && player.hasClass('vjs-paused')) {
@@ -992,7 +996,7 @@ function editComment(self) {
     });
 }
 
-$(function () {
+/*$(function () {
     var cBar = $('.vjs-control-bar');
     var cBarStatus = false;
     $('video').on('mousemove', function () {
@@ -1009,7 +1013,7 @@ $(function () {
         cBar.hide();
         cBarStatus = false;
     });
-});
+});*/
 
 //upload
 $(function() {
