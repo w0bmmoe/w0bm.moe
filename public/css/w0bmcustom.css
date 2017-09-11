@@ -149,6 +149,18 @@ div.tbody {
     overflow-y: hidden;
     border-right: 0 solid #3F3F3F;
 }
+
+.comments p {
+    margin: 0;
+}
+
+.comments blockquote {
+    color: #80FF00;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 #commentForm textarea {
     color: #c8c8c8;
     background: rgba(90, 88, 88, 0.4) none repeat scroll 0 0;
@@ -1871,8 +1883,9 @@ ul.vorteilul {
     text-align: left;
     background: #353535;
     color: white;
-    padding: 5px;
+    padding: 10px;
     list-style: none;
+    border-radius: 5px;
 }
 
 .panel-danger {                      
@@ -1965,4 +1978,32 @@ body {
     padding: 10px;
     background: #0c0c0c;
     font-weight: bold;
+}
+
+/* "ADS" */
+.panel-body.motd::after {
+    content: "Non-Profit Advertisement";
+    bottom: 0;
+    position: relative;
+    top: -12px;
+    left: 116px;
+    right: 0;
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+    background: white;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    vertical-align: top;
+}
+
+.profilheader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
 }

@@ -62,8 +62,12 @@ class User extends VerifyUser
     ];
 
 
-    public function videos() {
+    public function uploads() {
         return $this->hasMany(Video::class);
+    }
+
+    public function videos() {
+        return $this->uploads();
     }
 
     public function comments() {
@@ -81,7 +85,7 @@ class User extends VerifyUser
     public function messagesRecv() {
         return $this->hasMany(Message::class, 'to');
     }
-    
+
     public function favs() {
         return $this->belongsToMany(Video::class, 'favorites');
     }
@@ -125,7 +129,7 @@ class User extends VerifyUser
     }
 
     public function displayName() {
-        return e($this->username) . $this->activeIcon();
+        return e($this->username) . ($this->activeIcon() ? " " . $this->activeIcon() : "");
     }
 
 }

@@ -25,8 +25,8 @@
 </ul>
 
 <h4 class="filtersettings">Filter settings</h4>
-<p>NSFW is filtered out by default in normal mode. This means whenever you are NOT logged in and browsing w0bm without any category selected you wont see any as NSFW tagged videos.</p>
-<p>You can also set your own custom filters by clicking on Filter and then inserting the tags you don't want to see while browsing. Currently also only working in normal mode.</p>
+<p style="color:red; font-weight:bold;">Filter is now global and not logged in users will only see sfw videos</p>
+<p>You can also set your own custom filters by clicking on Filter and then inserting the tags you don't want to see while browsing.</p>
 <p>Example:</p>
 <span class="tag label label-info">gachimuchi</span> <span class="tag label label-info">gay</span>
 
@@ -36,15 +36,10 @@
 <ul class="mötter">
 <li><a href="/user/belst">belst</a></li>
 <li><a href="/user/BKA">BKA</a></li>
-<li><a href="/user/McManiaC">McManiaC</a></li>
-<li><a href="/user/OFMCK">OFMCK</a></li>
-<li><a href="/user/basilisk">basilisk</a></li>
 <li><a href="/user/gz">gz</a></li>
 <li><a href="/user/Flummi">Flummi</a></li>
 <li><a href="/user/jkhsjdhjs">jkhsjdhjs</a></li>
 <li><a href="/user/Czar">Czar</a></li>
-<li><a href="/user/flinny">flinny</a></li>
-<li><a href="/user/mrhanky">mrhanky</a></li>
 </ul>
 
 <h4 id="format">Comment formatting</h4>
@@ -52,7 +47,10 @@
    <li>>mfw w0bm is nice :3 will become: <span style="color:#80FF00;">>mfw w0bm is nice :3</span></li>
    <li><s>!Pantsu Pantsu Pantsu! will become: <span class="reich">Pantsu Pantsu Pantsu</span></s> <b style="color:red;">[ Currently disabled ]</b></li>
    <li>%KREBS KREBS KREBS KREBS% will become: <span class="anim">KREBS KREBS KREBS KREBS</span></li>
-   <li>*gg* will become: <strong>gg</strong></li>
+   <li>*gg* or _gg_ will become: <em>gg</em></li>
+   <li>**gg** or __gg__ will become: <strong>gg</strong></li>
+   <li>~~nope~~ will become: <del>nope</del></li>
+   <li>`code` will become: <code>code</code></li>
 </ul>
 <h4>Allowed sources for image parsing in the comment section</h4>
 <p><code>Filetypes: [{{ join(',', $comment['allowedImageFileExtensions']) }}] - Only secure connections allowed</code></p>
@@ -68,6 +66,7 @@
 </ul>
 <p>safe.moe is owned by <a href="/user/Alucard">Alucard</a> he hosts many of the images you can see while browsing through w0bm, he is a cool american guy, I can recommend to check out safe.moe, it's a fast and stable file hoster with no bullshit, upload and share, that's it.</p>
 </div>
+<b>We are 100% non profit, we don't get money for displaying the "ads" on the page, nor do we acceppt any kind of donations, we don't make money!</b>
 @include('footer')
 @endsection
 

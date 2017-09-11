@@ -6,7 +6,7 @@
           content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <meta name="_token" content="{{csrf_token()}}">
-    <meta name="keywords" content="webm, webm site, w0bm, videos, funny, internet">
+    <meta name="keywords" content="Random WebMs, WebMs, Internet Videos">
     <meta name="Description" content="@if(!empty($video->interpret)){{$video->interpret}} – {{$video->songtitle}}@else()No Data Available ;__;@endif">
     <meta property="og:image" content="@if(isset($video))https://w0bm.moe/thumbs/{{str_replace(".webm","",$video->file)}}.gif"@endif/>
     <link rel="icon" href="/favicon.png">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="/css/video-js.min.css">
-    <link rel="stylesheet" href="/css/w0bmcustom.css?v=1.0.85">
+    <link rel="stylesheet" href="/css/w0bmcustom.css?v=1.0.13">
     <link rel="stylesheet" href="/css/vjsnew.css?v=1.1.1">
 </head>
 <body>
@@ -50,6 +50,6 @@
 <script src="/js/jquery.timeago.js"></script>
 <script src="/js/jquery.detectmobilebrowser.js"></script>
 <script src="/js/video.min.js"></script>
-<script src="/js/w0bmscript.js?v=1.1.26"></script>
+<script src="/js/w0bmscript.min.js?v=1.1.26"></script>
 </body>
 </html>
